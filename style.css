@@ -1,0 +1,37 @@
+body {
+    background-color: lightslategrey;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, green, red);
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.square1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+}
+
+.square1:hover {
+    background-color: green;
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+    display: inline-block;
+}
+
+.square2.green {
+    background-color: green;
+}
