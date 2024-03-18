@@ -1,0 +1,5 @@
+body {
+    display: flexbox;
+    justify-content: center;
+    background: linear-gradient(to left, rgb(0, 0, 0) 34%, rgb(43, 255, 0) 70%, rgb(255, 0, 0)80%);
+}   
