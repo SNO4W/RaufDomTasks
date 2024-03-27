@@ -123,3 +123,27 @@ squares.forEach(function(square) {
         square.classList.add('green');
     });
 });
+
+// Задание 9
+// Реализовать калькулятор. Выводим 10 кнопок цифр от 0 до 10. Кнопки:
+// умножить, поделить, сложить, вычесть, вычислить. При нажатии на
+// кнопки в любом порядке выводиться в отдельном блоке строка (5-
+// 4+3*2...) и при нажатии на кнопку посчитать, заменяем в блоке данную
+// строку на результат её вычисления, при этом можно потом дальше
+// вычислять с уже этим вычислением. 
+function addToCalculator(symbol) {
+    document.getElementById('expression').value += symbol;
+}
+
+function clearCalculator() {
+    document.getElementById('expression').value = '';
+}
+
+function calculate() {
+    try {
+        let result = eval(document.getElementById('expression').value);
+        document.getElementById('expression').value = (result !== undefined) ? result : '';
+    } catch (error) {
+        document.getElementById('expression').value = 'Ошибка';
+    }
+}
